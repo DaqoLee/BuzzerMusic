@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"attainmusic\startup_stm32f427xx.o"
+"attainmusic\main.o"
+"attainmusic\gpio.o"
+"attainmusic\tim.o"
+"attainmusic\stm32f4xx_it.o"
+"attainmusic\stm32f4xx_hal_msp.o"
+"attainmusic\stm32f4xx_hal_tim.o"
+"attainmusic\stm32f4xx_hal_tim_ex.o"
+"attainmusic\stm32f4xx_hal_rcc.o"
+"attainmusic\stm32f4xx_hal_rcc_ex.o"
+"attainmusic\stm32f4xx_hal_flash.o"
+"attainmusic\stm32f4xx_hal_flash_ex.o"
+"attainmusic\stm32f4xx_hal_flash_ramfunc.o"
+"attainmusic\stm32f4xx_hal_gpio.o"
+"attainmusic\stm32f4xx_hal_dma_ex.o"
+"attainmusic\stm32f4xx_hal_dma.o"
+"attainmusic\stm32f4xx_hal_pwr.o"
+"attainmusic\stm32f4xx_hal_pwr_ex.o"
+"attainmusic\stm32f4xx_hal_cortex.o"
+"attainmusic\stm32f4xx_hal.o"
+"attainmusic\stm32f4xx_hal_exti.o"
+"attainmusic\system_stm32f4xx.o"
+"attainmusic\music.o"
+--library_type=microlib --strict --scatter "AttainMusic\AttainMusic.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "AttainMusic.map" -o AttainMusic\AttainMusic.axf
